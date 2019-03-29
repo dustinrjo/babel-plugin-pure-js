@@ -2,7 +2,7 @@
 Enforce a simple subset of JS
 
 ## What it does
-Removes the following keywords:
+*TODO* Removes the following keywords:
 
 ```
 class
