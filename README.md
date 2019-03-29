@@ -1,22 +1,41 @@
-# babel-plugin-pure-js
-Enforce a pure-functional subset of JS
+# babel-plugin-simple-js
+Enforce a simple subset of JS
+
+## What it does
+Removes the following keywords:
+
+```
+class
+new
+instanceof
+super
+this
+void
+private
+public
+static
+*.prototype
+Object
+```
+
+
 
 ## Install
 
 ```
-npm i --save-dev babel-plugin-pure-js
+npm i --save-dev babel-plugin-simple-js
 ```
 
 ## Usage
 
 1. Add the plugin to your .babelrc
-2. Name any Pure JS files to end with ```.pure.js```
+2. Name any Simple JS files to end with ```.simple.js```
 
 Example .babelrc:
 
 ```
 {
   "presets": ["env"],
-  "plugins": ["pure-js", "transform-object-rest-spread"]
+  "plugins": ["simple-js", "transform-object-rest-spread"]
 }
 ```
